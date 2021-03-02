@@ -16,6 +16,10 @@ jobs:
       run: docker pull mcr.microsoft.com/dotnet/aspnet:5.0
     - name: docker pull runtime
       run: docker pull mcr.microsoft.com/dotnet/runtime:5.0
+    - name: docker version
+      run: docker version
+    - name: docker info
+      run: docker info
     - name: docker pull runtime-deps
       run: docker pull mcr.microsoft.com/dotnet/runtime-deps:5.0
   linux:
@@ -28,5 +32,9 @@ jobs:
       run: docker pull mcr.microsoft.com/dotnet/aspnet:5.0
     - name: docker pull runtime
       run: docker pull mcr.microsoft.com/dotnet/runtime:5.0
+    - name: docker version
+      run: docker version
+    - name: docker info
+      run: docker info
     - name: docker pull runtime-deps
       run: docker pull mcr.microsoft.com/dotnet/runtime-deps:5.0
