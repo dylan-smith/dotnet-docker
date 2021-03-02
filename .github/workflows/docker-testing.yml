@@ -15,11 +15,11 @@ jobs:
     - name: docker pull sdk
       run: docker pull mcr.microsoft.com/dotnet/sdk:5.0
     - name: docker pull aspnet
-      run: docker pull mcr.microsoft.com/dotnet/sdk:5.0
+      run: docker pull mcr.microsoft.com/dotnet/aspnet:5.0
     - name: docker pull runtime
       run: docker pull mcr.microsoft.com/dotnet/runtime:5.0
     - name: docker pull runtime-deps
-      run: docker pull mcr.microsoft.com/dotnet/sdk:5.0
+      run: docker pull mcr.microsoft.com/dotnet/runtime-deps:5.0
   linux:
     runs-on: ubuntu-latest
     steps:
@@ -27,8 +27,8 @@ jobs:
     - name: docker pull sdk
       run: docker pull mcr.microsoft.com/dotnet/sdk:5.0
     - name: docker pull aspnet
-      run: docker pull mcr.microsoft.com/dotnet/sdk:5.0
+      run: docker pull mcr.microsoft.com/dotnet/aspnet:5.0
     - name: docker pull runtime
       run: docker pull mcr.microsoft.com/dotnet/runtime:5.0
     - name: docker pull runtime-deps
-      run: docker pull mcr.microsoft.com/dotnet/sdk:5.0
+      run: docker pull mcr.microsoft.com/dotnet/runtime-deps:5.0
